@@ -9,8 +9,9 @@ Version:	0.0
 %define	snap	20150515
 Release:	0.%{snap}.1
 License:	BSD
-Group:		Development/Libraries
-Source0:	https://poly2tri-c.googlecode.com/archive/5ac75d6f09e4de35ef33289c69bc1d46c2a04970.tar.gz
+Group:		Libraries
+#Source0:	https://poly2tri-c.googlecode.com/archive/5ac75d6f09e4de35ef33289c69bc1d46c2a04970.tar.gz
+Source0:	5ac75d6f09e4de35ef33289c69bc1d46c2a04970.tar.gz
 # Source0-md5:	f800bb38025009fefe781841ed0a3c36
 Patch0:		%{name}-build.patch
 URL:		https://code.google.com/p/poly2tri-c
