@@ -1,0 +1,11 @@
+--- poly2tri-c-5ac75d6f09e4/configure.ac.orig	2016-01-23 15:16:45.297871668 +0100
++++ poly2tri-c-5ac75d6f09e4/configure.ac	2016-01-23 15:17:04.718530205 +0100
+@@ -99,7 +99,7 @@ CFLAGS="$CFLAGS -Werror"
+ # Find GLib support via pkg-config
+ PKG_CHECK_MODULES([GLIB], [glib-2.0 >= 2.28])
+ 
+-CFLAGS="$CFLAGS $GLIB_CFLAGS"
++CFLAGS="$CFLAGS $GLIB_CFLAGS -std=c99"
+ LDFLAGS="$LDFLAGS $GLIB_LIBS"
+ LIBS="$LIBS $GLIB_LIBS"
+ 

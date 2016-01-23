@@ -14,6 +14,7 @@ Group:		Libraries
 Source0:	5ac75d6f09e4de35ef33289c69bc1d46c2a04970.tar.gz
 # Source0-md5:	f800bb38025009fefe781841ed0a3c36
 Patch0:		%{name}-build.patch
+Patch1:		compile.patch
 URL:		https://code.google.com/p/poly2tri-c
 BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf >= 2.50
@@ -66,6 +67,7 @@ Biblioteka statyczna poly2tri-c.
 %prep
 %setup -q -n %{name}-5ac75d6f09e4
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__libtoolize}
