@@ -22,7 +22,7 @@ BuildRequires:	automake
 BuildRequires:	glib2-devel >= 1:2.28
 BuildRequires:	libtool >= 2:2
 BuildRequires:	pkgconfig
-Requires:	glib2-devel >= 1:2.28
+Requires:	glib2 >= 1:2.28
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
